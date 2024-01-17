@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+   <title>HyperTextMarkupLanguage</title>
+</head>
+<body>
+  <p> <strong>HTML5</strong> (<i>HyperText Markup Language</i>, versión 5) es la <del>tercera</del> <u>quinta </u>revisión importante del lenguaje básico de la <del>Internet</del><u> World Wide Web</u>.</p>
+</body>
+</html>

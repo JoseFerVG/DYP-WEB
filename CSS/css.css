@@ -1,0 +1,33 @@
+header {
+    background-color: #456789;
+    color: #fff;
+    text-align: center;
+    width: 80%;
+    border: 2px;
+    border-color: #000;
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  article {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 20px ;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  article b {
+    color: purple;
+  }
+  .exploracion{
+background-color: #bbb;
+
+  }
+  .exploracionylistas{
+    text-align: justify;
+  }  
+  .horario{
+    background-color: #ddd;
+  }

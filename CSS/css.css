@@ -23,7 +23,8 @@ header {
     color: purple;
   }
   .exploracion{
-background-color: #bbb;
+
+       text-align: justify;
   }
 .horario h2{
   color: blue;
@@ -31,7 +32,7 @@ background-color: #bbb;
 
   
   .exploracionylistas{
-    text-align: justify;
+background-color: #bbb;
   }  
   .horario{
     background-color: #ddd;

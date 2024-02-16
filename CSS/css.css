@@ -1,42 +1,43 @@
 header {
-    background-color: #456789;
-    color: #fff;
-    text-align: center;
-    width: 80%;
-    border: 2px;
-    border-color: #000;
-    margin: 0 auto;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 50px;
-    padding-right: 50px;
-    border-style: inset;
-  }
-  article {
-    width: 80%;
-    margin: 0 auto;
-    margin-top: 20px ;
-    padding-left: 50px;
-    padding-right: 50px;
-  }
-  article b {
-    color: purple;
-  }
-  .exploracion{
-
-       text-align: justify;
-  }
+  background-color: #456789;
+  color: #fff;
+  text-align: center;
+  width: 80%;
+  border: 2px;
+  border-color: #000;
+  margin: 0 auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+  border-style: inset;
+}
+article {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 20px ;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+article b {
+  color: purple;
+}
+.exploracion{
+  background-color: #bbb;
+     text-align: justify;
+}
+.listas{
+  background-color: #bbb;
+}
 .horario h2{
-  color: blue;
+color: blue;
 }
 
-  
-  .exploracionylistas{
-background-color: #bbb;
-  }  
-  .horario{
-    background-color: #ddd;
-  }
+
+
+.horario{
+  background-color: #ddd;
+}
 
 
 table td  {
@@ -46,65 +47,65 @@ border-color: green;
 text-align: center;
 }
 table th {
-  border: 1px solid #dddddd;
-  border-style: ridge;
-  border-color: green;
-  text-align: center;
-  }
-  .horas {
-    color: #444;
-  }
-  .recreo {
-    background-color: green;
-    color: white;
-  
-  }
-  .dyp {
-    background-color: rosybrown;
-  }
-  .fisica {
-    background-color: lightblue ;
-  }
+border: 1px solid #dddddd;
+border-style: ridge;
+border-color: green;
+text-align: center;
+}
+.horas {
+  color: #444;
+}
+.recreo {
+  background-color: green;
+  color: white;
+
+}
+.dyp {
+  background-color: rosybrown;
+}
+.fisica {
+  background-color: lightblue ;
+}
 .filosofia {
-  background-color: lightgreen;
+background-color: lightgreen;
 }
 .historia{
-  background-color: lightcoral;
+background-color: lightcoral;
 }
 .mates{
-  background-color: lightseagreen;
+background-color: lightseagreen;
 } 
 .ingles{
-  background-color: limegreen;
+background-color: limegreen;
 }
 .lengua {
-  background-color: aqua;
+background-color: aqua;
 }
 .tecnologia{
-  background-color: yellow;
+background-color: yellow;
 }
 ol {
-  color: purple;
-  list-style-type: upper-alpha;
+color: purple;
+list-style-type: upper-alpha;
 }
 ol ol {
-  color: green;
-  list-style-type: lower-alpha;
+color: green;
+list-style-type: lower-alpha;
 }
 ol ul{
-  color: blue;
-  list-style: square;
+color: blue;
+list-style: square;
 }
 footer {
-  background-color: black;
-  color: white;
-  text-align: center;
-  width: 80%;
-  margin: 0 auto;
-  padding-left: 50px;
-  padding-right: 50px;
- 
+background-color: black;
+color: white;
+text-align: center;
+width: 80%;
+margin: 0 auto;
+padding-left: 50px;
+padding-right: 50px;
+
 }
 footer span{
-  font-size: 30px;
+font-size: 30px;
 }

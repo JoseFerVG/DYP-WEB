@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temporizador Elegante</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url('https://via.placeholder.com/1920x1080'); /* Cambia esta URL */
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
+        }
+
+        .container {
+            text-align: center;
+            background: rgba(0, 0, 0, 0.6);
+            padding: 20px;
+            border-radius: 15px;
+        }
+
+        .time-input {
+            font-size: 1.5rem;
+            padding: 10px;
+            margin: 10px 0;
+            width: 80px;
+            border-radius: 5px;
+            border: none;
+            text-align: center;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 1rem;
+            margin-top: 10px;
+            border: none;
+            border-radius: 5px;
+            background: #28a745;
+            color: white;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        button:hover {
+            background: #218838;
+        }
+
+        .timer {
+            font-size: 3rem;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Temporizador</h1>
+        <div>
+            <input id="minutes" class="time-input" type="number" placeholder="Minutos" min="0">
+            <input id="seconds" class="time-input" type="number" placeholder="Segundos" min="0">
+        </div>
+        <button onclick="startTimer()">Iniciar</button>
+        <div class="timer" id="timer-display">00:00</div>
+    </div>
+
+    <script>
+        function startTimer() {
+            const minutesInput = document.getElementById('minutes');
+            const secondsInput = document.getElementById('seconds');
+            const timerDisplay = document.getElementById('timer-display');
+
+            let totalSeconds = parseInt(minutesInput.value || 0) * 60 + parseInt(secondsInput.value || 0);
+
+            function updateDisplay() {
+                const minutes = Math.floor(totalSeconds / 60);
+                const seconds = totalSeconds % 60;
+                timerDisplay.textContent = 
+                    `${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
+            }
+
+            if (totalSeconds > 0) {
+                updateDisplay();
+                const interval = setInterval(() => {
+                    totalSeconds--;
+                    if (totalSeconds <= 0) {
+                        clearInterval(interval);
+                        timerDisplay.textContent = "¡Tiempo terminado!";
+                    } else {
+                        updateDisplay();
+                    }
+                }, 1000);
+            } else {
+                alert("Por favor, introduce un tiempo válido.");
+            }
+        }
+    </script>
+</body>
+</html>
